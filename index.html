@@ -17,24 +17,61 @@
             }
         </style>
     </head>
-    <body>
-        <header class="bg-cover bg-center flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-b border-gray-200 pb-3">
-            <div class="mx-7 my-2 text-3xl font-slab font-semibold tracking-tight">Mili</div>
-            <nav>
-                <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mx-7 text-sm">
-                    <a href="" class="relative text-gray-600 hover:text-gray-950">Accueil</a>
-                    <a href="" class="relative text-gray-600 hover:text-gray-950">Histoire</a>
-                    <a href="" class="relative text-gray-600 hover:text-gray-950">Galerie</a>
-                    <a href="" class="relative text-gray-600 hover:text-gray-950">Dossiers</a>
-                    <a href="" class="relative text-gray-600 hover:text-gray-950 ">Ressources</a>
-                </div>
-            </nav>
+
+    <body class="bg-midnight text-white">
+        <header class="sticky top-0 z-50 border-b border-white/10 bg-midnight/70 backdrop-blur-md">
+            <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-7 py-4">
+                <a href="#accueil" class="font-slab text-3xl font-semibold tracking-tight">
+                    Mili<span class="text-cyan-300">.</span>
+                </a>
+                <nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
+                    <a href="#accueil"    class="relative text-white/65 transition-colors duration-200 hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 hover:after:w-full">Accueil</a>
+                    <a href="#histoire"   class="relative text-white/65 transition-colors duration-200 hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 hover:after:w-full">Histoire</a>
+                    <a href="#galerie"    class="relative text-white/65 transition-colors duration-200 hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 hover:after:w-full">Galerie</a>
+                    <a href="#dossiers"   class="relative text-white/65 transition-colors duration-200 hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 hover:after:w-full">Dossiers</a>
+                    <a href="#ressources" class="relative text-white/65 transition-colors duration-200 hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 hover:after:w-full">Ressources</a>
+                </nav>
+            </div>
         </header>
-        <section id="accueil" class="relative overflow-hidden bg-[url('Images/image-hero.jpg')] bg-center bg-no-repeat bg-midnight bg-auto px-7 py-28">
-            <div class="absolute inset-0 -z-10 bg-gray-950"></div>
+        <section id="accueil" class="relative isolate overflow-hidden bg-midnight bg-[url('Images/image-hero.jpg')] bg-cover bg-center bg-no-repeat px-7 py-32 sm:py-44">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-b from-midnight/60 via-midnight/40 to-midnight"></div>
+            <div class="mx-auto max-w-6xl">
+                <p class="text-xs uppercase tracking-[0.25em] text-cyan-200/80">Archive non officielle · depuis 2012</p>
+                <h1 class="mt-5 font-slab text-6xl font-semibold tracking-tight sm:text-8xl">Mili</h1>
+                <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
+                    Discographie, traductions, entretiens et analyses, rassemblés et vérifiés
+                    par des passionnés.
+                </p>
+                <a href="#histoire" class="mt-10 inline-flex items-center gap-2 rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-midnight transition-colors hover:bg-cyan-200">
+                    Explorer l'histoire
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+        <section id="histoire" class="relative overflow-hidden bg-[url('Images/CityBlue.webp')] bg-cover bg-center bg-no-repeat">
+            <div class="bg-blue-950/50 px-7 py-24 backdrop-blur-sm">
                 <div class="mx-auto max-w-6xl">
-                    <p class="text-xs uppercase text-gray-300">Archive non officielle</p>
-                <h1 class="mt-4 font-slab text-6xl font-semibold text-white">Mili</h1>
+                    <p class="text-xs uppercase tracking-[0.25em] text-cyan-200/80">01 — Histoire</p>
+                    <h2 class="mt-5 max-w-2xl font-slab text-4xl font-semibold tracking-tight sm:text-5xl">
+                        Une chronologie en six chapitres
+                    </h2>
+                    <p class="mt-6 max-w-xl leading-relaxed text-white/70">
+                        Contenu à remplacer.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="galerie" class="relative overflow-hidden bg-[url('Images/To_Kill_a_Living_Book.jpg')] bg-cover bg-center bg-no-repeat">
+            <div class="bg-blue-950/50 px-7 py-24 backdrop-blur-sm">
+                <div class="mx-auto max-w-6xl">
+                    <p class="text-xs uppercase tracking-[0.25em] text-cyan-200/80">01 — Histoire</p>
+                    <h2 class="mt-5 max-w-2xl font-slab text-4xl font-semibold tracking-tight sm:text-5xl">
+                        Une chronologie en six chapitres
+                    </h2>
+                    <p class="mt-6 max-w-xl leading-relaxed text-white/70">
+                        Contenu à remplacer.
+                    </p>
+                </div>
             </div>
         </section>
     </body>
